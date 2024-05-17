@@ -12,7 +12,7 @@
                     <h6 class="m-0 font-weight-bold text-primary">Konfirmasi Hapus Mahasiswa</h6>
                 </div>
                 <div class="card-body">
-                    <form action="{{ route('mahasiswa.delete', $mahasiswa->id) }}" method="post">
+                    <form action="{{ route('mahasiswa.delete', $mahasiswa->id) }}" method="POST">
                         @csrf
                         @method('DELETE')
                         <p>Apakah Anda yakin ingin menghapus data mahasiswa dengan nama <strong>{{ $mahasiswa->nama }}</strong>?</p>

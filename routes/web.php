@@ -13,5 +13,5 @@ Route::controller(MahasiswaController::class)->prefix('mahasiswa')->group(functi
     Route::post('insert', 'insert')->name('mahasiswa.add.insert');
     Route::get('{id}/edit', 'edit')->name('mahasiswa.edit');
     Route::put('{id}/edit', 'update')->name('mahasiswa.update');
-    Route::delete('{id}/delete', 'delete')->name('mahasiswa.delete');
+    Route::delete('/mahasiswa/{id}', [MahasiswaController::class, 'delete'])->name('mahasiswa.delete');
 });
