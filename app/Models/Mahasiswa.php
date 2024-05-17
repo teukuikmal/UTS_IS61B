@@ -13,4 +13,3 @@ class Mahasiswa extends Model
         'nama', 'email', 'alamat', 'no_telp'
     ];
 }
-
