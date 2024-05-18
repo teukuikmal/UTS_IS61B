@@ -3,5 +3,5 @@
 @section('title', 'Dashboard')
 
 @section('content')
-    <p>HALAMAN DASHBOARD</p>
+    <p>SIAKAD ASRAMA MAHASISWA SULAIMANIYAH ACEH</p>
 @endsection
